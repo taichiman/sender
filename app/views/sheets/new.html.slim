@@ -1,0 +1,7 @@
+h2 
+  | Import a sheet file
+
+= form_for @sheet do |f|
+  = f.label :file_name, 'File'
+  = f.file_field :file_name
+  = submit_tag 'Import'
